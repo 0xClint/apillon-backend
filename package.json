@@ -2,11 +2,11 @@
   "name": "apillon-sdk-sandbox",
   "version": "1.0.0",
   "description": "Apillon SDK usage example.",
-  "main": "dist/index",
+  "main": "dist/server.js",
   "scripts": {
-    "dev": "ts-node-dev --respawn src/server.ts",
+    "start": "node dist/server.js",
     "build": "tsc",
-    "start": "nodemon --exec npx ts-node src/index.ts",
+    "dev": "ts-node src/server.ts",
     "storage:bucket-upload": "npx ts-node ./src/storage-bucket-upload.ts"
   },
   "devDependencies": {

@@ -29,6 +29,7 @@ router.post("/upload", async (req, res) => {
       },
     ];
 
+    
     const uploadResult = await storage
       .bucket(process.env.APILLON_BUCKET!)
       .uploadFiles(files);
